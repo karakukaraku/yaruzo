@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Apartment Partners</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/gsdk.css">
+  </head>
+
+  <body>
+
+    <div class="container cake">
+    <header>
+      <div class="code">
+      <div class="head">
+      <div class="container">
+      <h1 id="logo"><img src="./img/logos.png" width="50px" height="50px" alt=""></a></h1>
+      <div id="navControl">
+        <a href="#" class="close">Navigation</a>
+      </div><!--nsvcontrol-->
+      </div><!--container-->
+      </div><!--head-->
+
+      <div class="head2">
+      <div class="container">
+      <nav>
+        <ul id="globalNav" class="clearfix">
+          <i class="material-icons">extension</i><li><a href="about.html">会社概要</a></li>
+          <li><a href="privacy.html">個人情報保護方針</a></li>
+          <li><a href="legalnotice.html">免責事項</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      </div><!--container-->
+      </div><!--head2-->
+      </div><!--code-->
+    </header>
+
+    <!-- Page Content -->
+    
+    <div class="box1 clearfix">
+      <div class="box1-1"></div>
+      <div class="box1-2"></div>
+     
+     <div class="box1-3">
+     <div id="sliderContainer">
+      <ul class="rslides">
+        <li><img src="img/caro1.jpg" alt="" /></li>
+        <li><img src="img/caro2.jpg" alt="" /></li>
+        <li><img src="img/caro3.jpg" alt="" /></li>
+      </ul>
+     </div>
+     </div><!--box1-3-->
+     
+     <div class="box1-4"></div>
+     <div class="box1-5"></div>
+
+    </div><!--box1-->
+
+
+
+
+
+
+   <div class="box2">
+    <div class="box2-1 animated fadeInLeft"></div>
+    <div class="box2-2">
+      <iframe src="./map.html" style="border:none;"  class="animated fadeInRight"></iframe>
+    </div>
+   </div><!--box2-->
+
+   <div class="box3">
+    <div class="h1img">
+      <a href="index.html"><img src="./img/logos.png" alt="" width="50px" height="50px" class="donatu"></a>
+    </div><!--h1img-->
+    <div class="menu">
+     <ul id="global2" class="clearfix">
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="privacy.html">個人情報保護方針</a></li>
+          <li><a href="legalnotice.html">免責事項</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+    </div><!--menu-->
+   </div><!--box3-->
+
+    
+   <div class="box4">
+    <p>
+      &copy; 2017 株式会社Apartment Partners ALL RIGHTS RESERVED
+      </p>
+   </div>
+   </div><!--container cake-->
+
+   <div class="box10" style="height: 200px; width: 100%;">
+     
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/get-shit-done.js"></script>
+    <script src="js/gsdk-radio.js"></script>
+    <script src="js/gsdk-checkbox.js"></script>
+    <script src="js/gsdk-bootstrapswitch.js"></script>
+    <script src="js/jquery-ui 1.10.4.custom.mim.js"></script>
+    <script src="js/"></script>
+
+    
+    <script>
+    $(function () {
+      $(".rslides").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500
+     
+     //slider画像入れ替え
+     var screenWidth = $(window).innerWidth();
+     if(screenWidth > 600 && navigator.userAgent.indexOf('Android 2') == -1){
+      $("#sliderContainer img").each(function(){
+      $(this).attr("src",$(this).attr("src").replace(/^(.+)_small(\.[a-z]+)$/, "$1$2"));
+      });
+      }
+      });
+     </script>
+      
+  </body>
+
+</html>
